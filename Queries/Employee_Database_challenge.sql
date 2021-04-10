@@ -45,3 +45,21 @@ ON (e.emp_no = t.emp_no)
 WHERE de.to_date = ('9999-01-01')
     AND (e.birth_date BETWEEN '1965-01-01' AND '1965-12-31')
 ORDER BY e.emp_no;
+
+
+SELECT e.emp_no, 
+	e.first_name, 
+	e.last_name, 
+	t.title, 
+	t.from_date, 
+	s.salary 
+INTO summary_response
+FROM employees AS e 
+INNER JOIN titles AS t
+ON (e.emp_no = t.emp_no) 
+INNER JOIN salaries AS s 
+ON (t.emp_no = s.emp_no) 
+WHERE (e.birth_date BETWEEN '1952-01-01' AND '1952-12-31');
+
+SELECT COUNT (emp_no)
+FROM summary_response; 
