@@ -174,20 +174,3 @@ FROM retirement_info as ri
 INNER JOIN dept_info as di
 ON (ri.emp_no = di.emp_no)
 WHERE di.dept_name='Sales' OR di.dept_name='Development';
-
-SELECT e.emp_no, 
-	e.first_name, 
-	e.last_name, 
-	t.title, 
-	t.from_date, 
-	s.salary 
-INTO summary_response
-FROM employees AS e 
-INNER JOIN titles AS t
-ON (e.emp_no = t.emp_no) 
-INNER JOIN salaries AS s 
-ON (t.emp_no = s.emp_no) 
-WHERE (e.birth_date BETWEEN '1952-01-01' AND '1952-12-31');
-
-SELECT COUNT (emp_no)
-FROM summary_response; 
