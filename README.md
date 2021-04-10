@@ -45,12 +45,12 @@ How many roles will need to be filled as the "silver tsunami" begins to make an 
 
 - The number roles that will need to be filled in the first year of the "silver tsunami" is 31,374. 
 
-Please see the below image with the query and results:
+Please see the below image with the both queries and result of the count of employees:
 
 ![summary_response.png](https://github.com/DanielGandia/Pewlett-Hackard-Analysis/blob/main/Resources/summary_response.png)
 
 Are there enough qualified, retirement-ready employees in the departments to mentor the next generation of Pewlett Hackard employees?
 
-- There seem to be enough employees in the mentorship program to cover each position, but not enough to fill each vacancy.
+- There seem to be enough employees in the mentorship program to cover each position, except for the "Manager" position. Also, there are not enough employees 
 
 ![mentorship_titles.png](https://github.com/DanielGandia/Pewlett-Hackard-Analysis/blob/main/Resources/mentoship_titles.png)
